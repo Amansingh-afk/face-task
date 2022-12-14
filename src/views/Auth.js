@@ -30,7 +30,7 @@ const Auth = () => {
       userData.username.toLowerCase() === credentials.uname &&
       userData.password.toLowerCase() === credentials.pass
     ) {
-      localStorage.setItem("authed", "true");
+      localStorage.setItem("isLoggedIn", "true");
       window.location.pathname = "/home";
     } else {
       setError(() => ({ value: "Invlaid username/Password" }));
